@@ -12,8 +12,8 @@ def recursive(n, d=2):
 
 def check_prime(n):
     if n <= 1:
-        return "NO"
+        return "Число должно быть больше 1"
     return "YES" if recursive(n) else "NO"
 
 n = int(input("Введите число для проверки: "))
-print(check_prime(n))
+print(check_prime(abs(n)))
