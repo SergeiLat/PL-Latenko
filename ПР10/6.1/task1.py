@@ -2,13 +2,12 @@
 with open("LatenkoSO_YB52_vvod.txt", "r") as f:
     lines = f.readlines()
 
-# Преобразуем строки файла в матрицу чисел
+# Преобразование строк файла в матрицу
 A = [list(map(int, line.split())) for line in lines]
 
 max_line = 0
 max_colum = 0
 
-# Открываем файл для записи результатов
 with open("LatenkoSO_YB52_vivod.txt", "w") as f_out:
     f_out.write("Исходный массив:\n")
     for row in A:
